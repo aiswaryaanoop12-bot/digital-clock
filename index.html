@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +34,6 @@
       let minutes = now.getMinutes();
       let seconds = now.getSeconds();
 
-      // Add leading zeros
       hours = hours < 10 ? "0" + hours : hours;
       minutes = minutes < 10 ? "0" + minutes : minutes;
       seconds = seconds < 10 ? "0" + seconds : seconds;
@@ -42,8 +42,8 @@
       document.getElementById("clock").textContent = timeString;
     }
 
-    setInterval(updateClock, 1000); // Update every second
-    updateClock(); // Initial call to display clock immediately
+    setInterval(updateClock, 1000);
+    updateClock();
   </script>
 </body>
 </html>
